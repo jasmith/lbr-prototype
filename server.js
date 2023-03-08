@@ -15,6 +15,7 @@ const PORT=process.env.PORT ||5001;
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public/html')));
+//app.use(express.static(path.join(__dirname, 'public/images')));
 app.listen(PORT,()=>console.log(`listening on port ${PORT}`));
 app.use(express.json());
 //app.use(auth(config));
